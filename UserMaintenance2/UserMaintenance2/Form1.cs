@@ -50,5 +50,13 @@ namespace UserMaintenance2
             }
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var torles = listBox1.SelectedItem;
+
+            if (torles != null)
+                users.Remove((User)torles);
+        }
     }
 }
