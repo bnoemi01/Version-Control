@@ -124,6 +124,7 @@ namespace IRF_3_excel
 
             Excel.Range lastColRange = xlSheet.get_Range(GetCell(1, headers.Length), GetCell(Flats.Count, headers.Length));
             lastColRange.Interior.Color = Color.LightGreen;
+            lastColRange.NumberFormat = "###,###.00";
 
 
         }
