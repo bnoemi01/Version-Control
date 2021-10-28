@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using webszolgaltatas.v2.Entities;
 using webszolgaltatas.v2.MnbServiceReference;
 
 namespace webszolgaltatas.v2
@@ -15,10 +16,14 @@ namespace webszolgaltatas.v2
     {
         MNBArfolyamServiceSoapClient mnbService = new MNBArfolyamServiceSoapClient();
 
+        BindingList<RateData> Rates = new BindingList<RateData>();
+
         public Form1()
         {
             InitializeComponent();
             GetExchangeRates();
+
+            dataGridView1.DataSource = Rates.ToList();
 
         }
 
