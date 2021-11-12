@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace fejlesztesi_mintak.Entities
 {
-    public class BallFactory : IToyFactory
+    class CarFactory : IToyFactory
     {
         public Toy CreateNew()
         {
